@@ -1,0 +1,10 @@
+*.log
+
+.DS_Store
+.coverage
+dist/
+
+__pycache__/
+*.pyс
+
+.env

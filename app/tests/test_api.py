@@ -1,9 +1,11 @@
-from fastapi.testclient import TestClient
-from app.api import app
-from unittest.mock import AsyncMock
 from fastapi import status
+from fastapi.testclient import TestClient
+from unittest.mock import AsyncMock
+
 import pytest
 import pytest_asyncio
+
+from app.api import app
 
 
 @pytest.fixture

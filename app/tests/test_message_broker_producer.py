@@ -1,7 +1,9 @@
-from app.message_broker_producer import MessageBrokerProducer
 from unittest.mock import AsyncMock, patch
-import pytest_asyncio
+
 import pytest
+import pytest_asyncio
+
+from app.message_broker_producer import MessageBrokerProducer
 
 
 DATA = {

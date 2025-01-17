@@ -22,23 +22,27 @@
 ### UC-1: Создать заявку
 
 - Цель: Создать заявку
+
 - Описание: Пользователь отправляет POST-запрос на '/applications' с двумя параметрами
+
 - Пример запроса:
 	```
 	curl -X 'POST' \
-  'http://localhost:8000/applications' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "description": "<your description>",
-  "user_name": "<your user_name>"
-  }'
+  	'http://localhost:8000/applications' \
+  	-H 'accept: application/json' \
+  	-H 'Content-Type: application/json' \
+  	-d '{
+  	"description": "<your description>",
+  	"user_name": "<your user_name>"
+  	}'
 	```
+
 - Результат: Пользователь получает свою заявку с новыми полями id и created_at
 
 ### UC-2: Получить список заявок
 
 - Цель: Получить список заявок
+
 - Описание: Пользователь отправляет GET-запрос на '/applications', также иожно указать необязательные параметры:
 
 	1. page - номер страницы(по умолчанию = 1)
